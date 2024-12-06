@@ -27,8 +27,8 @@ jobs:
 
     uses: ./.github/workflows/build-docker.yml
     with:
-      registry: byoaiacontainerreg.azurecr.io
-      username: byoaiacontainerreg
+      registry: byoaiacontainerregpk.azurecr.io
+      username: byoaiacontainerregpk
       password_secret: ${{ matrix.password_secret }}
       app_name: ${{ matrix.app_name }}
       dockerfile: ${{ matrix.dockerfile }}
